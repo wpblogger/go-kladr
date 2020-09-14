@@ -1,0 +1,52 @@
+# github.com/buaazp/fasthttprouter v0.1.1
+github.com/buaazp/fasthttprouter
+# github.com/getsentry/sentry-go v0.4.0
+github.com/getsentry/sentry-go
+# github.com/go-resty/resty/v2 v2.1.0
+github.com/go-resty/resty/v2
+# github.com/jackc/pgx v3.6.1+incompatible
+github.com/jackc/pgx
+github.com/jackc/pgx/chunkreader
+github.com/jackc/pgx/internal/sanitize
+github.com/jackc/pgx/pgio
+github.com/jackc/pgx/pgproto3
+github.com/jackc/pgx/pgtype
+github.com/jackc/pgx/stdlib
+# github.com/jmoiron/sqlx v1.2.0
+github.com/jmoiron/sqlx
+github.com/jmoiron/sqlx/reflectx
+# github.com/klauspost/compress v1.9.0
+github.com/klauspost/compress/flate
+github.com/klauspost/compress/gzip
+github.com/klauspost/compress/zlib
+# github.com/lab259/cors v0.2.0
+github.com/lab259/cors
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasthttp v1.9.0
+github.com/valyala/fasthttp
+github.com/valyala/fasthttp/fasthttputil
+github.com/valyala/fasthttp/stackless
+# github.com/valyala/fastjson v1.4.5
+github.com/valyala/fastjson
+github.com/valyala/fastjson/fastfloat
+# golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+golang.org/x/crypto/pbkdf2
+# golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297
+golang.org/x/net/publicsuffix
+# golang.org/x/text v0.3.2
+golang.org/x/text/cases
+golang.org/x/text/internal
+golang.org/x/text/internal/language
+golang.org/x/text/internal/language/compact
+golang.org/x/text/internal/tag
+golang.org/x/text/language
+golang.org/x/text/runes
+golang.org/x/text/secure/bidirule
+golang.org/x/text/secure/precis
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/width

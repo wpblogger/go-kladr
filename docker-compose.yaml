@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  elastic_srv:
+    container_name: elastic_kladr
+    hostname: ${HOSTNAME}_elastic
+    image: elasticsearch:7.6.1
+    environment:
+      - "PS1=$$(whoami)@$$(hostname):$$(pwd) $$ " 
+      - discovery.type=single-node
+    volumes:
+     - ./elasticsearch-data:/usr/share/elasticsearch/data
+    networks: 
+      kladr_net:
+        aliases:
+        - elastic
+
+  kladr_srv:
+    container_name: srv_kladr
+    hostname: "${HOSTNAME}_go_kladr"
+    build: .
+    depends_on:
+      - elastic_srv
+    restart: unless-stopped 
+    ports: 
+      - 8080:8080
+    environment:
+      - "PS1=$$(whoami)@$$(hostname):$$(pwd) $$ " 
+      - ELASTIC=http://elastic:9200/kladr
+    networks: 
+      kladr_net:
+        aliases:
+        - kladr
+
+networks:
+  kladr_net:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.16.0.0/24
